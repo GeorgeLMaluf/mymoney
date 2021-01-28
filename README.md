@@ -5,13 +5,6 @@ It was build using:
  * Ruby 2.7.2
  * Postgresql Sever 10
  * Docker Engine 20.10.2
-
-Some important gems in the project:
- * For Development:
-    * pg 
- * For Testing:
-    * rspec
-
 ## Configuration
 
 ## Setup Databases
@@ -19,5 +12,3 @@ Some important gems in the project:
 ## Running tests
 
 ## Running system on localhost
-
-## Live version
