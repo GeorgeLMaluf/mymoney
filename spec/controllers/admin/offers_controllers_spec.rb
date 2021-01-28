@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 describe Admin::OffersController, type: :controller do
@@ -28,7 +30,7 @@ describe Admin::OffersController, type: :controller do
 
   describe 'GET #edit' do
     let(:offer) { create(:offer) }
-    subject(:edit_offer) { get :edit, params: {id: offer.id} }
+    subject(:edit_offer) { get :edit, params: { id: offer.id } }
     it 'render a successful response' do
       edit_offer
       expect(response).to be_successful
@@ -97,7 +99,7 @@ describe Admin::OffersController, type: :controller do
 
   describe 'PATCH #enable' do
     let(:offer) { create(:offer) }
-    subject(:enable_offer) { patch :enable, params: { id: offer.id}}
+    subject(:enable_offer) { patch :enable, params: { id: offer.id } }
 
     it 'enable offer' do
       enable_offer
@@ -107,15 +109,14 @@ describe Admin::OffersController, type: :controller do
 
   describe 'PATCH #disable' do
     let(:offer) { create(:offer) }
-    subject(:disable_offer) { patch :disable, params: { id: offer.id}}
+    subject(:disable_offer) { patch :disable, params: { id: offer.id } }
 
     it 'disable offer' do
       disable_offer
       expect(offer.reload.disabled?).to be_truthy
     end
-
   end
-  
+
   describe 'DELETE #destroy' do
     subject(:destroy_offer) { delete :destroy, params: { id: offer.id } }
 
