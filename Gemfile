@@ -40,6 +40,9 @@ end
 group :test do
   gem 'capybara'
   gem 'capybara-screenshot'
+  gem 'database_cleaner'
+  gem 'faker'
+  gem 'rails-controller-testing'
   gem 'selenium-webdriver'
   gem 'simplecov'
   gem 'webdrivers'
