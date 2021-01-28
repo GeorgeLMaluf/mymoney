@@ -16,6 +16,7 @@ gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.4'
 gem 'sassc', '~> 2.1.0'
 gem 'sass-rails', '~> 5.0'
+gem 'sidekiq'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 
@@ -40,6 +41,8 @@ end
 group :test do
   gem 'capybara'
   gem 'capybara-screenshot'
+  gem 'database_cleaner'
+  gem 'faker'
   gem 'selenium-webdriver'
   gem 'simplecov'
   gem 'webdrivers'
